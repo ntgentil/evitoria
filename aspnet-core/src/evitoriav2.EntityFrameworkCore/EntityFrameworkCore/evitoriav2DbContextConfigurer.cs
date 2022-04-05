@@ -1,3 +1,4 @@
+using System;
 using System.Data.Common;
 using Microsoft.EntityFrameworkCore;
 
@@ -7,12 +8,14 @@ namespace evitoriav2.EntityFrameworkCore
     {
         public static void Configure(DbContextOptionsBuilder<evitoriav2DbContext> builder, string connectionString)
         {
-            builder.UseSqlServer(connectionString);
+            var serverVersion = new MySqlServerVersion(new Version(8, 0, 27));
+            builder.UseMySql(connectionString, serverVersion, options => options.EnableRetryOnFailure());
         }
 
         public static void Configure(DbContextOptionsBuilder<evitoriav2DbContext> builder, DbConnection connection)
         {
-            builder.UseSqlServer(connection);
+            var serverVersion = new MySqlServerVersion(new Version(8, 0, 27));
+            builder.UseMySql(connection, serverVersion, options => options.EnableRetryOnFailure());
         }
     }
 }

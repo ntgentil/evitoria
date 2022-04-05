@@ -13,7 +13,7 @@ namespace evitoriav2.Migrations
                     name: "Id",
                     table: "AbpDynamicPropertyValues",
                     nullable: false)
-                .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                .Annotation("SqlServer:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn);
             migrationBuilder.AddPrimaryKey(
                 name: "PK_AbpDynamicPropertyValues",
                 table: "AbpDynamicPropertyValues",
@@ -25,7 +25,7 @@ namespace evitoriav2.Migrations
                     name: "Id",
                     table: "AbpDynamicEntityPropertyValues",
                     nullable: false)
-                .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                .Annotation("SqlServer:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn);
 
             migrationBuilder.AddPrimaryKey(
                 name: "PK_AbpDynamicEntityPropertyValues",
@@ -41,7 +41,7 @@ namespace evitoriav2.Migrations
                     name: "Id",
                     table: "AbpDynamicPropertyValues",
                     nullable: false)
-                .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                .Annotation("SqlServer:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn);
             migrationBuilder.AddPrimaryKey(
                 name: "PK_AbpDynamicPropertyValues",
                 table: "AbpDynamicPropertyValues",
@@ -53,7 +53,7 @@ namespace evitoriav2.Migrations
                     name: "Id",
                     table: "AbpDynamicEntityPropertyValues",
                     nullable: false)
-                .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                .Annotation("SqlServer:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn);
             migrationBuilder.AddPrimaryKey(
                 name: "PK_AbpDynamicEntityPropertyValues",
                 table: "AbpDynamicEntityPropertyValues",

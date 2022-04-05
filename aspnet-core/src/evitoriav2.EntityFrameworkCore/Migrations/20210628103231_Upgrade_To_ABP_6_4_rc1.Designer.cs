@@ -17,7 +17,6 @@ namespace evitoriav2.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .UseIdentityColumns()
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("ProductVersion", "5.0.3");
 
@@ -26,7 +25,7 @@ namespace evitoriav2.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
-                        .UseIdentityColumn();
+                        .UseMySqlIdentityColumn();
 
                     b.Property<DateTime>("CreationTime")
                         .HasColumnType("datetime2");
@@ -69,7 +68,7 @@ namespace evitoriav2.Migrations
                     b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("bigint")
-                        .UseIdentityColumn();
+                        .UseMySqlIdentityColumn();
 
                     b.Property<DateTime>("CreationTime")
                         .HasColumnType("datetime2");
@@ -106,7 +105,7 @@ namespace evitoriav2.Migrations
                     b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("bigint")
-                        .UseIdentityColumn();
+                        .UseMySqlIdentityColumn();
 
                     b.Property<string>("BrowserInfo")
                         .HasMaxLength(512)
@@ -181,7 +180,7 @@ namespace evitoriav2.Migrations
                     b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("bigint")
-                        .UseIdentityColumn();
+                        .UseMySqlIdentityColumn();
 
                     b.Property<DateTime>("CreationTime")
                         .HasColumnType("datetime2");
@@ -218,7 +217,7 @@ namespace evitoriav2.Migrations
                     b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("bigint")
-                        .UseIdentityColumn();
+                        .UseMySqlIdentityColumn();
 
                     b.Property<string>("ClaimType")
                         .HasMaxLength(256)
@@ -253,7 +252,7 @@ namespace evitoriav2.Migrations
                     b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("bigint")
-                        .UseIdentityColumn();
+                        .UseMySqlIdentityColumn();
 
                     b.Property<DateTime>("CreationTime")
                         .HasColumnType("datetime2");
@@ -313,7 +312,7 @@ namespace evitoriav2.Migrations
                     b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("bigint")
-                        .UseIdentityColumn();
+                        .UseMySqlIdentityColumn();
 
                     b.Property<string>("ClaimType")
                         .HasMaxLength(256)
@@ -348,7 +347,7 @@ namespace evitoriav2.Migrations
                     b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("bigint")
-                        .UseIdentityColumn();
+                        .UseMySqlIdentityColumn();
 
                     b.Property<string>("LoginProvider")
                         .IsRequired()
@@ -386,7 +385,7 @@ namespace evitoriav2.Migrations
                     b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("bigint")
-                        .UseIdentityColumn();
+                        .UseMySqlIdentityColumn();
 
                     b.Property<string>("BrowserInfo")
                         .HasMaxLength(512)
@@ -434,7 +433,7 @@ namespace evitoriav2.Migrations
                     b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("bigint")
-                        .UseIdentityColumn();
+                        .UseMySqlIdentityColumn();
 
                     b.Property<DateTime>("CreationTime")
                         .HasColumnType("datetime2");
@@ -468,7 +467,7 @@ namespace evitoriav2.Migrations
                     b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("bigint")
-                        .UseIdentityColumn();
+                        .UseMySqlIdentityColumn();
 
                     b.Property<DateTime>("CreationTime")
                         .HasColumnType("datetime2");
@@ -501,7 +500,7 @@ namespace evitoriav2.Migrations
                     b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("bigint")
-                        .UseIdentityColumn();
+                        .UseMySqlIdentityColumn();
 
                     b.Property<DateTime?>("ExpireDate")
                         .HasColumnType("datetime2");
@@ -538,7 +537,7 @@ namespace evitoriav2.Migrations
                     b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("bigint")
-                        .UseIdentityColumn();
+                        .UseMySqlIdentityColumn();
 
                     b.Property<DateTime>("CreationTime")
                         .HasColumnType("datetime2");
@@ -583,7 +582,7 @@ namespace evitoriav2.Migrations
                     b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("bigint")
-                        .UseIdentityColumn();
+                        .UseMySqlIdentityColumn();
 
                     b.Property<DateTime>("CreationTime")
                         .HasColumnType("datetime2");
@@ -626,7 +625,7 @@ namespace evitoriav2.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
-                        .UseIdentityColumn();
+                        .UseMySqlIdentityColumn();
 
                     b.Property<int>("DynamicPropertyId")
                         .HasColumnType("int");
@@ -654,7 +653,7 @@ namespace evitoriav2.Migrations
                     b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("bigint")
-                        .UseIdentityColumn();
+                        .UseMySqlIdentityColumn();
 
                     b.Property<int>("DynamicEntityPropertyId")
                         .HasColumnType("int");
@@ -681,7 +680,7 @@ namespace evitoriav2.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
-                        .UseIdentityColumn();
+                        .UseMySqlIdentityColumn();
 
                     b.Property<string>("DisplayName")
                         .HasColumnType("nvarchar(max)");
@@ -713,7 +712,7 @@ namespace evitoriav2.Migrations
                     b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("bigint")
-                        .UseIdentityColumn();
+                        .UseMySqlIdentityColumn();
 
                     b.Property<int>("DynamicPropertyId")
                         .HasColumnType("int");
@@ -737,7 +736,7 @@ namespace evitoriav2.Migrations
                     b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("bigint")
-                        .UseIdentityColumn();
+                        .UseMySqlIdentityColumn();
 
                     b.Property<DateTime>("ChangeTime")
                         .HasColumnType("datetime2");
@@ -773,7 +772,7 @@ namespace evitoriav2.Migrations
                     b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("bigint")
-                        .UseIdentityColumn();
+                        .UseMySqlIdentityColumn();
 
                     b.Property<string>("BrowserInfo")
                         .HasMaxLength(512)
@@ -825,7 +824,7 @@ namespace evitoriav2.Migrations
                     b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("bigint")
-                        .UseIdentityColumn();
+                        .UseMySqlIdentityColumn();
 
                     b.Property<long>("EntityChangeId")
                         .HasColumnType("bigint");
@@ -867,7 +866,7 @@ namespace evitoriav2.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
-                        .UseIdentityColumn();
+                        .UseMySqlIdentityColumn();
 
                     b.Property<DateTime>("CreationTime")
                         .HasColumnType("datetime2");
@@ -922,7 +921,7 @@ namespace evitoriav2.Migrations
                     b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("bigint")
-                        .UseIdentityColumn();
+                        .UseMySqlIdentityColumn();
 
                     b.Property<DateTime>("CreationTime")
                         .HasColumnType("datetime2");
@@ -1149,7 +1148,7 @@ namespace evitoriav2.Migrations
                     b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("bigint")
-                        .UseIdentityColumn();
+                        .UseMySqlIdentityColumn();
 
                     b.Property<string>("Code")
                         .IsRequired()
@@ -1202,7 +1201,7 @@ namespace evitoriav2.Migrations
                     b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("bigint")
-                        .UseIdentityColumn();
+                        .UseMySqlIdentityColumn();
 
                     b.Property<DateTime>("CreationTime")
                         .HasColumnType("datetime2");
@@ -1337,7 +1336,7 @@ namespace evitoriav2.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
-                        .UseIdentityColumn();
+                        .UseMySqlIdentityColumn();
 
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken()
@@ -1411,7 +1410,7 @@ namespace evitoriav2.Migrations
                     b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("bigint")
-                        .UseIdentityColumn();
+                        .UseMySqlIdentityColumn();
 
                     b.Property<int>("AccessFailedCount")
                         .HasColumnType("int");
@@ -1538,7 +1537,7 @@ namespace evitoriav2.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
-                        .UseIdentityColumn();
+                        .UseMySqlIdentityColumn();
 
                     b.Property<string>("ConnectionString")
                         .HasMaxLength(1024)
